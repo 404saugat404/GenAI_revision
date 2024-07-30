@@ -4,7 +4,10 @@ setup(
     name="MCQ Generation using GenAI",
     author="Saugat Thapa Chhetri",
     author_email="saugat556513@gmail.com",
-    requires=['openai','langchain','python-dotenv','streamlit','PyPDF2'],
+    install_requires=['openai','langchain','python-dotenv','streamlit','PyPDF2'],
     packages=find_packages()
 
 )
+
+
+
