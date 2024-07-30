@@ -4,7 +4,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 
-from mcq.quiz.utils import read_file
+from mcq.quiz.logger import logging
+
+from mcq.quiz.utils import read_file,get_table_data
 
 from dotenv import load_dotenv
 import os
