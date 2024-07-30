@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 #loading json file:
 with open('/home/saugat/Desktop/GenAI/mcq_generation_using_genAI/RESPONSE.json', "r") as file:
-    RESPONSE_JSON=json.loads(file)
+    RESPONSE_JSON=json.load(file)
 
 st.title('MCQ GENERATOR')
 
