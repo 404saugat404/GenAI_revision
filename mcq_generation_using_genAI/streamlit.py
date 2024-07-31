@@ -36,7 +36,7 @@ with st.form('user input'):
             try:
                 text=read_file(file_upload)
             
-                with get_openai_callback as cb:
+                with get_openai_callback() as cb:
                     #count tokens and cost of api
                     response=final_chain(
                         {
