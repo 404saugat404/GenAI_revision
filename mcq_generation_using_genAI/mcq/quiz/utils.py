@@ -4,9 +4,9 @@ import traceback
 import json
 
 def read_file(file):
-    if file.name.ends_with('.pdf'):
+    if file.name.endswith('.pdf'):
         try:
-            reader=PyPDF2.PdfFileReader(file)
+            reader=PyPDF2.PdfReader(file)
             text=""
             for page in reader.pages():
                 text=text+page.extract_text()
@@ -16,7 +16,7 @@ def read_file(file):
         except Exception as e:
             raise Exception('unknown error occured while reading pdf file') 
 
-    elif file.name.ends_with('.txt'):
+    elif file.name.endswith('.txt'):
         return file.read().decode('utf-8')
 
     else:
