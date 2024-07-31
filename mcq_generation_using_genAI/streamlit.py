@@ -44,7 +44,7 @@ with st.form('user input'):
                             "number":mcq_count,
                             "subject":topic,
                             "tone":difficulty,
-                            "response":json.dumps(RESPONSE_JSON)
+                            "response_json":json.dumps(RESPONSE_JSON)
 
                         }
                     )

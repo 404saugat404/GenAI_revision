@@ -28,7 +28,7 @@ def get_table_data(quiz_str):
         quiz_data=[]
         quiz_dict=json.loads(quiz_str)
 
-        for key,value in quiz_str.items():
+        for key,value in quiz_dict.items():
             mcq=value['mcq']
             options=" | ".join(
                 [
